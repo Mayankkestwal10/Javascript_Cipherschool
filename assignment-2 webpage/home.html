@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js" ></script>
+  </head>
+  <body>
+      <div id='root'>
+            <div class="heading">Our <span style="color:Red">S</span>
+            <span style="color:Yellow">t</span>
+            <span style="color:Green">o</span>
+            <span style="color:Gray">r</span>
+            <span>e</span></div>
+
+            <div class="links">
+                <ul>
+                    <li class="items active"><a href="javascript:filterItem('all')">All</a></li>
+                    <li class="items"><a href="javascript:filterItem('cakes')">Cakes</a></li>
+                    <li class="items"><a href="javascript:filterItem('cupcakes')">Cupcakes<a/></li>
+                    <li class="items"><a href="javascript:filterItem('sweets')">Sweets</a></li>
+                    <li class="items"><a href="javascript:filterItem('doughnuts')">Doughnuts</a></li>
+                </ul>
+            </div>
+
+            <div id="search">
+                <div id="searchBar">
+                    <i class="fa fa-search"></i>
+                    <input id="searching" onkeyup="searchItems()" type="text" placeholder="item.."/>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="card sweets">
+                    <img src="https://wallpapercave.com/wp/wp2157279.jpg">
+                    <h3>Sweet Item</h3>
+                    <span>$5</span>
+                </div>
+
+                <div class="card cupcakes">
+                    <img src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2020/04/Basic-cupcakes-recipe-image-scaled-e1587394625463.jpg">
+                    <h3>Cupcake Item</h3>
+                    <span>$5</span>
+                </div>
+
+
+                <div class="card cakes">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DR_xDiShk">
+                    <h3>Cake Item</h3>
+                    <span>$5</span>
+                </div>
+
+                <div class="card doughnuts">
+                    <img src="https://i.ytimg.com/vi/gevpzxRxec4/maxresdefault.jpg">
+                    <h3>Doughnut Item</h3>
+                    <span>$5</span>
+                </div>
+
+            </div>
+      </div>
+   
+  </body>
+</html>
